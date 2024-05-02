@@ -1,19 +1,59 @@
-// Get a reference to the #add-employees-btn element
+
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
-// Collect employee data
+let employee = {
+  firstName: '', 
+  lastName: '', 
+  salary: ''
+};
+
+let employeesArray = [];
+
 const collectEmployees = function() {
-  // TODO: Get user input to create and return an array of employee objects
+  let addEmployee = true
+  while (addEmployee) {
+    employee = {
+    firstName: '', 
+    lastName: '', 
+    salary: ''
+    };
+    employee.firstName = prompt("Please enter employee's first name");
+    employee.lastName = prompt("Please enter employee's last name");
+    employee.salary = parseInt(prompt("Please enter employee's salary"));
+      if (isNaN (employee.salary)) {
+       employee.salary = 0; 
+      }
+    if (!confirm("Do you want to add another employee?")){
+        addEmployee = false;
+    };
+    employeesArray.push(employee);
+  }
+    return employeesArray;
 }
 
-// Display the average salary
 const displayAverageSalary = function(employeesArray) {
+  //calculate average salary
+  // for loop to create sum, sum of average salaries divide by array.length
+
+
   // TODO: Calculate and display the average salary
+  //pet example
+  //let totalSalary = 0
+  //index [ 0   ,  1 ,   2 ] 
+  //[Sarah, Joe, {Carli}]
+  //how to access all employees salary? 
+  // for loop (14-Iteration)
+  //employee[i].salary
+  //take ind. salary and add it to the total
+  //totalSalary and divide by total number of array items
+  //console log
+
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
+  // TODO: Select and display a random employee - look up math function to randomize a number, numbers not names --check methods
+  // create variable, make it equal to math.random times by array.length -- plug into console log as string using template literal format ${ }
 }
 
 /*
