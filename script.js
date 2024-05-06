@@ -32,9 +32,18 @@ const collectEmployees = function() {
 }
 
 const displayAverageSalary = function(employeesArray) {
-  for(let salary = 0; 0 < salary.length; salary++) {
-    console.log(displayAverageSalary)
-  }
+  let employeeCount = employeesArray.length;
+  let totalSalary = 0;
+
+  for (let i = 0; i < employeeCount; i++) {
+    totalSalary += employeesArray[i].salary;
+    let averageSalary = totalSalary / employeeCount;
+
+    console.log ('The average employee salary between our ' (employeeCount()) ' employees is ' (averageSalary)'.')
+
+  };
+
+
 
   //   console.log ('The average employee salary between our' employeesArray.length 'employees is' (avg));
   // }
