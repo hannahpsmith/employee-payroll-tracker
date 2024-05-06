@@ -32,6 +32,16 @@ const collectEmployees = function() {
 }
 
 const displayAverageSalary = function(employeesArray) {
+  for(let salary = 0; 0 < salary.length; salary++) {
+    console.log(displayAverageSalary)
+  }
+
+  //   console.log ('The average employee salary between our' employeesArray.length 'employees is' (avg));
+  // }
+
+//   for (let salary* salary.length)
+//     avg = (salary * salary.length);
+// console.log("The average employee salary between our" employee.length "employees is" avg);
   //calculate average salary
   // for loop to create sum, sum of average salaries divide by array.length
 
@@ -47,6 +57,8 @@ const displayAverageSalary = function(employeesArray) {
   //take ind. salary and add it to the total
   //totalSalary and divide by total number of array items
   //console log
+
+  // i need to take the number of employees, total the salaries, divid by the total number of employees
 
 }
 
